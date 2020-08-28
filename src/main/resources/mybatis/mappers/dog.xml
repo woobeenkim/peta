@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="dog">
+
+	<select id="getdog" parameterType="int" 
+		resultType="com.javaex.vo.DogVo">
+		<![CDATA[			
+			select  dogno, dogname, dogage, dogweight, dogtype, userno, dogimg
+			from 	dog
+			where	dogname = #{dogName}
+			and		userno= #{userNo}
+		]]>
+	</select>
+	
+	<select id="getdList" parameterType="int" 
+		resultType="com.javaex.vo.DogVo">
+		<![CDATA[			
+			select  dogno, dogname, userno
+			from 	dog
+			where	userno = #{userNo}
+		]]>
+	</select>
+</mapper>

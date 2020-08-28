@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>매장 고객 (공지사항)</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Common CSS -->
+  <link href="../../css/common.css" rel="stylesheet">
+
+  <!-- Jquery Modal CSS -->
+  <link href="../../vendor/jquery/jquery.modal.css" rel="stylesheet">
+
+</head> 
+
+<body class="bg-light">
+
+  <!-- 헤더 네비 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <!-- 로고 -->
+      <a class="navbar-brand" href="#"><img src="../../image/logo/lettering-bright.png"></a>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <!-- 메인 네비 -->
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">공지사항</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">가격표</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">사진첩</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">애견용품</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">찾아오시는 길</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#">예약하기</a></li>
+        </ul>
+
+        <!-- 회원 네비 -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#">홍길동님</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">매장관리</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">펫 관리</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">회원정보</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">로그아웃</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- 헤더 네비 -->
+
+
+  <!-- main -->
+  <main role="main">
+
+    <!-- 타이틀 -->
+    <div class="jumbotron title_bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="../../image/example/shop-title/title_img.png" class="rounded-circle btn-block mt-4 title_img">
+          </div>
+          <div class="col-md-10 title_fnt">
+            <h1 class="display-3 mt-4"><b>매장 이름</b></h1>
+            <div class="mt-2">
+              <b>(매장 간략 소개글)</b> 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치 아무말 대잔치...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /. 타이틀 -->
+  
+    <!-- 컨텐츠 -->
+    <div class="container">
+      
+      <!-- 컨텐츠 제목 : 지도 -->
+      <div class="row mb-4">
+        <div class="col-md-12"><h2>찾아오시는 길</h2></div>
+      </div>
+      <!-- /. 컨텐츠 제목 : 지도 -->
+
+      <!-- 컨텐츠 내용 : 지도 -->
+      <div class="row mb-5">
+        <div class="col-md-12">
+          <!-- api 대체할 div영역 -->
+          <div class="border bg-white" style="height: 400px">
+            map api
+          </div>
+          <!-- /. api 대체할 div영역 -->
+        </div>
+      </div>
+      <!-- /. 컨텐츠 내용 : 지도 -->
+
+      <!-- 컨텐츠 제목 : 설명 -->
+      <div class="row mb-4">
+        <div class="col-md-12"><h2>설 명</h2></div>
+      </div>
+      <!-- /. 컨텐츠 제목 : 설명 -->
+
+      <!-- 컨텐츠 내용 : 지도 -->
+      <div class="row mb-5">
+        <div class="col-md-12">
+          <!-- api 대체할 div영역 -->
+          <textarea class="form-control" rows="15"></textarea>
+          <!-- /. api 대체할 div영역 -->
+        </div>
+      </div>
+      <!-- /. 컨텐츠 내용 : 지도 -->
+
+      <!-- 컨텐츠 제목 (관리자) -->
+      <div class="row mb-3 mt-5">
+        <div class="col-md-12">
+          <h2>등록 및 수정</h2> <h6 style="color: red;">(관리자로 로그인 하였을 때만 보이는 영역. 이 맨트는 삭제할 것)</h6><hr>
+        </div>
+      </div>
+      <!-- /. 컨텐츠 제목 (관리자) -->
+
+      <!-- 컨텐츠 내용 (관리자) -->
+      <div class="row">
+        <div class="col-md-12">
+          
+          <!-- 설명 입력 -->
+          <div class="row mb-3">
+            <div class="col-md-1 pt-3">
+              <h6><b>설 명</b></h6>
+            </div>
+            <div class="col-md-11">
+              <textarea class="form-control border" rows="10" placeholder="내용을 입력해주세요."></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8 pt-2"></div>
+            <div class="col-md-2"><a class="btn btn-primary btn-sm btn-block" href="#" role="button">적 용</a></div>
+            <div class="col-md-2"><a class="btn btn-secondary btn-sm btn-block" href="#" role="button">취 소</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- /. 컨텐츠 내용 (관리자) -->
+
+      <!-- 컨텐츠 마무리 -->
+      <div class="row mb-2">
+        <div class="col-md-12">
+          <hr>
+        </div>
+      </div>
+      <!-- /. 컨텐츠 마무리 -->
+
+    <!-- /. 컨텐츠 -->
+  </main>
+
+
+
+  <!-- 풋터 -->
+  <footer class="bg-dark">
+    <div class="container">
+      <p class="m-0 py-4 text-left text-white">
+        <a class="navbar-brand" href="#"><img src="../../image/logo/lettering-bright.png"></a><br><br>
+        <b>페타그램</b>&nbsp;&nbsp;&nbsp;서울특별시 서초구 서초대로 77길 13 401호<br>
+        <b>대표이사</b> : 풀스택A팀&nbsp;&nbsp;&nbsp;<b>사업자등록번호</b> : 000-00-00000&nbsp;&nbsp;&nbsp;<b>고객센터</b> : 02-000-0000&nbsp;&nbsp;&nbsp;<b>이메일</b> : help@petagram.com
+      </p>
+    </div>
+  </footer>
+  <!-- /. 풋터 -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../../vendor/jquery/jquery.min.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../js/common.js"></script>
+</body>
+
+</html>

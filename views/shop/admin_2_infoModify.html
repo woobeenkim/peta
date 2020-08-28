@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>매장 관리자 (정보관리)</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Common CSS -->
+  <link href="../../css/common.css" rel="stylesheet">
+
+  <!-- Jquery Modal CSS -->
+  <link href="../../vendor/jquery/jquery.modal.css" rel="stylesheet">
+
+</head> 
+
+<body class="bg-light">
+
+  <!-- 헤더 네비 -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <!-- 로고 -->
+      <a class="navbar-brand" href="#"><img src="../../image/logo/lettering-bright.png"></a>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <!-- 메인 네비 -->
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">공지사항</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">가격표</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">사진첩</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">애견용품</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">찾아오시는 길</a></li>
+          <li class="nav-item active"><a class="nav-link" href="#">예약하기</a></li>
+        </ul>
+
+        <!-- 회원 네비 -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="#">홍길동님</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">매장관리</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">펫 관리</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">회원정보</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">로그아웃</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- 헤더 네비 -->
+
+
+  <!-- main -->
+  <main role="main">
+
+    <!-- 타이틀 -->
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="../../image/example/shop-title/title_img.png" class="rounded-circle btn-block mt-4">
+          </div>
+          <div class="col-md-10">
+            <h1 class="display-3 mt-4"><b>매장 이름</b></h1>
+            <!-- 타이틀 메뉴 -->
+            <div class="mt-4">
+              <a class="btn btn-secondary btn-lg" href="#" role="button">예약관리 &raquo;</a>
+              <a class="btn btn-primary btn-lg" href="#" role="button">정보수정 &raquo;</a>
+              <a class="btn btn-secondary btn-lg" href="#" role="button">페이지 관리 &raquo;</a>
+              <!-- 토글 스위치 -->
+              <div class="toggleWrap">
+                <label class="switchTitle">검색 노출</label>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              <!-- /. 토글 스위치 -->
+            </div>
+            <!-- /. 타이틀 메뉴 -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /. 타이틀 -->
+  
+    <!-- 컨텐츠 -->
+    <div class="container">
+      
+      <!-- 컨텐츠 제목 : 매장 정보 -->
+      <div class="row mb-3">
+        <div class="col-md-12">
+          <h2>매장 정보</h2><hr>
+        </div>
+      </div>
+      <!-- /. 컨텐츠 제목 : 매장 정보 -->
+
+      <!-- 컨텐츠 내용 : 매장 정보 -->
+      <form>
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <div class="row mb-2">
+              <div class="col-md-1"></div>
+              <div class="col-md-2"><h6><b>매장명</b></h6></div>
+              <div class="col-md-8"><input type="text" id="" class="form-control" required autofocus></div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row mb-5">
+              <div class="col-md-1"></div>
+              <div class="col-md-2"><h6><b>매장 소개</b></h6></div>
+              <div class="col-md-8"><textarea class="form-control" rows="5" required></textarea></div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row mb-2">
+              <div class="col-md-1"></div>
+              <div class="col-md-2"><h6><b>프로필 이미지</b></h6></div>
+              <div class="col-md-8 form-group"><input type="file" class="form-control-file" id="exampleFormControlFile1"></div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row mb-5">
+              <div class="col-md-1"></div>
+              <div class="col-md-2"><h6><b>배경 이미지</b></h6></div>
+              <div class="col-md-8 form-group"><input type="file" class="form-control-file" id="exampleFormControlFile1"></div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row mb-2">
+              <div class="col-md-1"></div>
+              <div class="col-md-2"><h6><b>매장 주소</b></h6></div>
+              <div class="col-md-8"><input type="text" id="" class="form-control" required></div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row mb-2">
+              <div class="col-md-1"></div>
+              <div class="col-md-2"><h6><b>사업자 번호</b></h6></div>
+              <div class="col-md-8"><input type="text" id="" class="form-control" required></div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row mb-2">
+              <div class="col-md-1"></div>
+              <div class="col-md-2"><h6><b>대표 번호</b></h6></div>
+              <div class="col-md-8"><input type="text" id="" class="form-control" required></div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row mb-5">
+              <div class="col-md-1"></div>
+              <div class="col-md-2"><h6><b>대표 이메일</b></h6></div>
+              <div class="col-md-8"><input type="email" id="" class="form-control" required></div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <!-- /. 컨텐츠 내용 : 매장 정보 -->
+
+      <!-- 컨텐츠 제목 : 카테고리 정보 -->
+      <div class="row mb-3">
+        <div class="col-md-12">
+          <h2>카테고리 정보</h2><hr>
+        </div>
+      </div>
+      <!-- /. 컨텐츠 제목 : 카테고리 정보 -->
+
+      <!-- 컨텐츠 내용 : 카테고리 노출 설정 -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="row mb-3">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <table class="table text-center">
+                <thead class="table-secondary">
+                  <tr><th scope="col">카테고리명</th><th scope="col">노출 여부</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>공지사항</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                  <tr><td>사진첩</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                  <tr><td>가격표</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                  <tr><td>애견용품</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                  <tr><td>찾아오시는 길</td><td><div><label class="switch"><input type="checkbox"><span class="slider round"></span></label></div></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+      </div>
+      <!-- /. 컨텐츠 내용 : 카테고리 노출 설정 -->
+
+      <!-- 컨텐츠 마무리 -->
+      <div class="row mb-3">
+        <div class="col-md-12"><hr></div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-8"></div>
+        <div class="col-md-2"><a class="btn btn-primary btn-sm btn-block" href="#" role="button">적 용</a></div>
+        <div class="col-md-2"><a class="btn btn-secondary btn-sm btn-block" href="#" role="button">취 소</a></div>
+      </div>
+      <!-- /. 컨텐츠 마무리 -->
+      
+    </div>
+    <!-- /. 컨텐츠 -->
+
+  </main>
+  <!-- /. main -->
+
+
+  <!-- 풋터 -->
+  <footer class="bg-dark">
+    <div class="container">
+      <p class="m-0 py-4 text-left text-white">
+        <a class="navbar-brand" href="#"><img src="../../image/logo/lettering-bright.png"></a><br><br>
+        <b>페타그램</b>&nbsp;&nbsp;&nbsp;서울특별시 서초구 서초대로 77길 13 401호<br>
+        <b>대표이사</b> : 풀스택A팀&nbsp;&nbsp;&nbsp;<b>사업자등록번호</b> : 000-00-00000&nbsp;&nbsp;&nbsp;<b>고객센터</b> : 02-000-0000&nbsp;&nbsp;&nbsp;<b>이메일</b> : help@petagram.com
+      </p>
+    </div>
+  </footer>
+  <!-- /. 풋터 -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../../vendor/jquery/jquery.min.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../js/common.js"></script>
+</body>
+
+</html>
